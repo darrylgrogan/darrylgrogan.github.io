@@ -1,7 +1,4 @@
-User-agent: Googlebot
-Allow: /
-
 User-agent: *
-Allow: / 
+Allow: /
 
 Sitemap: https://darrylgrogan.github.io/sitemap.xml
