@@ -2,8 +2,9 @@
   padding-bottom: 0.035rem;
 }
 
-.navbar-brand{
-  color:white; !important;
+.navbar-brand {
+  color: white !important; 
+}
 
 .navbar-nav {
   margin-bottom: 0 !important;
