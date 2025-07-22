@@ -47,7 +47,7 @@
 .nav-tabs .nav-link.active {
   background-color: white;
   color: #212529;
-  border-color: #999;
+  border-color: black;
   border-bottom: none;  /* Still no bottom border */
   top: -3px;
   z-index: 2;
