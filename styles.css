@@ -1,10 +1,10 @@
 .navbar {
   padding-top: 0.035rem;
+  padding-bottom: 0.0rem
 }
 
 .navbar-brand {
   color: white !important;
-  padding-top: 0rem;
 }
 
 .navbar-nav {
