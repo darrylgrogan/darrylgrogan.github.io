@@ -28,6 +28,7 @@
   border-bottom: none;
   border-radius: 0.5rem 0.5rem 0 0;
   margin-right: 0.2rem;
+  margin-bottom:0px;
   padding: 0.5rem 1rem;
   transition: top 0.15s ease;
   position: relative;
