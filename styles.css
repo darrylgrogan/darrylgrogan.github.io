@@ -3,7 +3,8 @@
 }
 
 .navbar-brand {
-  color: white !important; 
+  color: white !important;
+  padding-bottom: -0.035rem;
 }
 
 .navbar-nav {
