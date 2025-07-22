@@ -20,7 +20,6 @@
 }
 
 .nav-tabs .nav-link {
-  background-color: #343a40;  /* Match dark navbar */
   color: white;
   border: 2px solid #444;
   border-bottom: none;
