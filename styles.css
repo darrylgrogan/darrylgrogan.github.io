@@ -2,11 +2,6 @@
   padding-bottom: 0.035rem;
 }
 
-.navbar .nav-link.active {
-  border-bottom: 2px solid white; /* optional highlight */
-  padding-bottom: 0.5rem;
-}
-
 .navbar-nav {
   margin-bottom: 0 !important;
 }
