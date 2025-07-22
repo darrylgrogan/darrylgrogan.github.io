@@ -44,3 +44,11 @@
   top: -3px;
   z-index: 2;
 }
+
+.navbar-nav .nav-item {
+  margin-bottom: 0 !important;
+}
+
+.navbar {
+  border-bottom: none !important;
+}
