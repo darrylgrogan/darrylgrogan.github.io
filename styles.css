@@ -1,10 +1,8 @@
 .navbar {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.035rem;
 }
 
 .navbar .nav-link.active {
-  background-color: transparent;
   border-bottom: 2px solid white; /* optional highlight */
   padding-bottom: 0.5rem;
 }
