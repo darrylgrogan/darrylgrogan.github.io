@@ -2,6 +2,9 @@
   padding-bottom: 0.035rem;
 }
 
+.navbar-brand{
+  color:white;
+
 .navbar-nav {
   margin-bottom: 0 !important;
 }
