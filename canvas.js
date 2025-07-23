@@ -13,9 +13,11 @@ const createScene = function () {
     // Dim the light a small amount - 0 to 1
     light.intensity = 0.7;
    
-    BABYLON.ImportMeshAsync("testbuilding.glb", scene, {
-        meshNames: "building"
-    });
+    BABYLON.SceneLoader.ImportMeshAsync("", "./", "testbuilding.glb", scene)
+  .then(result => {
+    console.log("Loaded meshes:");
+    result.meshes.forEach(mesh => console.log(mesh.name));
+  });
     	
     // Built-in 'ground' shape.
     const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 6, height: 6}, scene);
