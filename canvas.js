@@ -13,7 +13,7 @@ const createScene = function () {
     // Dim the light a small amount - 0 to 1
     light.intensity = 0.7;
    
-    BABYLON.SceneLoader.ImportMeshAsync("", "./", "testbuilding.glb", scene)
+    BABYLON.SceneLoader.ImportMeshAsync("", "./", "building1.glb", scene)
   .then(result => {
     console.log("Loaded meshes:");
     result.meshes.forEach(mesh => console.log(mesh.name));
