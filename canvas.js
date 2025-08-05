@@ -22,7 +22,7 @@ const createScene = function () {
     result.meshes.forEach(mesh => console.log(mesh.name));
   });
   //Import Lanscapes
-    BABYLON.SceneLoader.ImportMeshAsync("", "./", "landscape.glb", scene)
+    BABYLON.SceneLoader.ImportMeshAsync("", "./", "landscape2.glb", scene)
   .then(result => {
     console.log("Loaded landscape meshes:");
     result.meshes.forEach(mesh => console.log(mesh.name));
@@ -38,5 +38,6 @@ engine.runRenderLoop(function () {
 window.addEventListener("resize", function () {
 	engine.resize();
 });
+
 
 
