@@ -13,18 +13,18 @@ const createScene = function () {
     // Dim the light a small amount - 0 to 1
     light.intensity = 0.7;
 
+    //Importing models instead search for the specfic meshes in the .glb file then edit code for what is on the console
 	
-	
-    // Import building
+    // Import building 
     BABYLON.SceneLoader.ImportMeshAsync("", "./", "building1.glb", scene)
   .then(result => {
-    console.log("Loaded meshes:");
+    console.log("Loaded building meshes:");
     result.meshes.forEach(mesh => console.log(mesh.name));
   });
-    	
+  //Import Lanscapes
     BABYLON.SceneLoader.ImportMeshAsync("", "./", "landscape.glb", scene)
   .then(result => {
-    console.log("Loaded meshes:");
+    console.log("Loaded landscape meshes:");
     result.meshes.forEach(mesh => console.log(mesh.name));
   });
     return scene;
@@ -38,4 +38,5 @@ engine.runRenderLoop(function () {
 window.addEventListener("resize", function () {
 	engine.resize();
 });
+
 
