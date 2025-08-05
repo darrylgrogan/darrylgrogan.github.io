@@ -12,15 +12,21 @@ const createScene = function () {
     const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
     // Dim the light a small amount - 0 to 1
     light.intensity = 0.7;
-   
+
+	
+	
+    // Import building
     BABYLON.SceneLoader.ImportMeshAsync("", "./", "building1.glb", scene)
   .then(result => {
     console.log("Loaded meshes:");
     result.meshes.forEach(mesh => console.log(mesh.name));
   });
     	
-    // Built-in 'ground' shape.
-    const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 6, height: 6}, scene);
+    BABYLON.SceneLoader.ImportMeshAsync("", "./", "landscape.glb", scene)
+  .then(result => {
+    console.log("Loaded meshes:");
+    result.meshes.forEach(mesh => console.log(mesh.name));
+  });
     return scene;
 };
 const scene = createScene(); //Call the createScene function
@@ -32,3 +38,4 @@ engine.runRenderLoop(function () {
 window.addEventListener("resize", function () {
 	engine.resize();
 });
+
