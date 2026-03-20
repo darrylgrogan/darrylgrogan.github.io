@@ -4,6 +4,9 @@ const ctx = canvas.getContext("2d");
 const xSize = 800;
 const ySize = 600;
 
+canvas.width = xSize;
+canvas.height = ySize;
+
 const squareX = 200;
 const squareY = 150;
 
@@ -104,8 +107,13 @@ for (let i = 0; i < 10; i++) {
 /* ================= INPUT ================= */
 canvas.addEventListener("click", (e) => {
   const rect = canvas.getBoundingClientRect();
-  const mx = e.clientX - rect.left;
-  const my = e.clientY - rect.top;
+
+  const scaleX = canvas.width / rect.width;
+  const scaleY = canvas.height / rect.height;
+
+  const mx = (e.clientX - rect.left) * scaleX;
+  const my = (e.clientY - rect.top) * scaleY;
+
   bullets.push(new Bullet(mx, my));
 });
 
