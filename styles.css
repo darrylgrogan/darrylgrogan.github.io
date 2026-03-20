@@ -63,3 +63,13 @@
 p{
   color:white
 }
+
+#gameCanvas {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 4 / 3; /* keeps 800x600 ratio */
+  background: black;
+  display: block;
+  margin-top: 20px;
+}
