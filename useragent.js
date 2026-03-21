@@ -9,9 +9,9 @@ function isTouchDevice() {
 }
 
 if (isTouchDevice()) {
-  isTouchAvailable = "yes"
+  isTouchAvailable = "yes touchscreen is enabled"
 } else {
-  isTouchAvailable = "no"
+  isTouchAvailable = "no touchscreen is not enabled"
 }
 
 document.getElementById("output1").innerHTML = device;
